@@ -91,4 +91,16 @@ require("lazy").setup({
 
 	-- git integration
 	"lewis6991/gitsigns.nvim", -- show line modifications on left hand side
+
+	-- dashboard
+	{
+		"glepnir/dashboard-nvim",
+		event = "VimEnter",
+		config = function()
+			require("dashboard").setup({
+				-- config
+			})
+		end,
+		dependencies = { { "nvim-tree/nvim-web-devicons" } },
+	},
 })
