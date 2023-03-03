@@ -22,4 +22,4 @@
 
 ### 可参考的配置
 
-- Chris - https://github.com/ChristianChiarulli/lvim(LunarVim 官网推荐)
+- Chris - https://github.com/ChristianChiarulli/lvim (LunarVim 官网推荐)
