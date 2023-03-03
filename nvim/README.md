@@ -19,3 +19,7 @@
 1、书籍：《VIM 实用技巧》第 2 版
 
 2、书籍：《VIM 实用技巧：使用模式入门篇》第 2 版
+
+### 可参考的配置
+
+- Chris - https://github.com/ChristianChiarulli/lvim(LunarVim 官网推荐)

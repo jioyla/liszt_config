@@ -19,23 +19,8 @@ null_ls.setup({
 		--  "formatting.prettier.with({disabled_filetypes = {}})" (see null-ls docs)
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
-
-		-- python formatter
-		formatting.autopep8,
-		formatting.yapf,
-		formatting.ruff,
-		formatting.black,
-		formatting.isort,
-		formatting.autoflake,
-
-		-- python linter
-		--		diagnostics.pylint.with({
-		--	diagnostics_postprocess = function(diagnostic)
-		--		diagnostic.code = diagnostic.message_id
-		--	end,
-		--	}),
-		diagnostics.flake8,
-		diagnostics.mypy,
+		formatting.black, -- Python formatter
+		diagnostics.flake8, -- Python linter
 
 		-- js/ts linter
 		diagnostics.eslint_d.with({

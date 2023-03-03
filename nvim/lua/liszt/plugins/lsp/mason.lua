@@ -28,7 +28,7 @@ mason_lspconfig.setup({
 		"tailwindcss",
 		"lua_ls",
 		"emmet_ls",
-		"pyre",
+		"pyre", -- Python LSP
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
@@ -40,10 +40,8 @@ mason_null_ls.setup({
 		"prettier", -- ts/js formatter
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
-		"pyre",
-		"autopep8",
-		"yapf",
-		--		"pylint",
+		"pyre", -- Python linter
+		"black", -- Python formatter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
