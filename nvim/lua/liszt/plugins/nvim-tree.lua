@@ -24,6 +24,11 @@ nvimtree.setup({
 			},
 		},
 	},
+	-- 使用实时过滤器过滤目录
+	live_filter = {
+		prefix = "[FILTER]: ",
+		always_show_folders = false, -- Turn into false from true by default
+	},
 	-- disable window_picker for
 	-- explorer to work well with
 	-- window splits

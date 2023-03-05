@@ -6,9 +6,6 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps
 ---------------------
--- 刷新配置文件,配置不成功，可能要会写SHELL语言才行。
--- keymap.set("n", "R", ":source $MYVIMCONFIG<CR>")
-
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
@@ -34,10 +31,10 @@ keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- window resize
-keymap.set("n", "<up>", ":res +5<CR>") -- 方向键“⬆️”往上增加5像素
-keymap.set("n", "<down>", ":res -5<CR>")
-keymap.set("n", "<left>", ":vertical resize-5<CR>")
-keymap.set("n", "<right>", ":vertical resize+5<CR>")
+keymap.set("n", "<M-Up>", ":res +5<CR>") -- 方向键“⬆️”往上增加5像素
+keymap.set("n", "<M-Down>", ":res -5<CR>")
+keymap.set("n", "<M-Left>", ":vertical resize-5<CR>")
+keymap.set("n", "<M-Right>", ":vertical resize+5<CR>")
 
 ----------------------
 -- Plugin Keybinds
@@ -64,3 +61,6 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current c
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
+
+-- Use :UndotreeToggle to toggle the undo-tree panel
+keymap.set("n", "<leader><F5>", "<cmd>UndotreeToggle<cr>")

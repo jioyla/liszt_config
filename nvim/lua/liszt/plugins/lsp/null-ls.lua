@@ -20,6 +20,7 @@ null_ls.setup({
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.black, -- Python formatter
+		formatting.autopep8, -- Python formatter:automatically formats Python code to conform to the PEP 8 style guide.
 		diagnostics.flake8, -- Python linter
 
 		-- js/ts linter

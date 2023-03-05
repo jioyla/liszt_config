@@ -42,6 +42,8 @@ mason_null_ls.setup({
 		"eslint_d", -- ts/js linter
 		"pyre", -- Python linter
 		"black", -- Python formatter
+		"autoflake", --Python formatter
+		"autopep8", --Python formatter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
